@@ -1,350 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>Professional Business Card</title>
-    <!-- PWA: manifest and theme color -->
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#11ac1b">
-    <!-- iOS support -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="apple-touch-icon" href="icons/icon-192.svg">
     <link rel="icon" href="icons/icon-192.svg" sizes="192x192">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>Dr. Iniobong Abiola-Awe — Biography</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container d-flex align-items-center">
+        <a class="brand d-flex align-items-center" href="index.html">
+          <!-- <img src="directorq.jpg" alt="Iniobong" class="brand-photo" /> -->
+          <div class="ms-2">
+            <h1 class="h5 mb-0">INIOBONG ABIOLA-AWE</h1>
+            <!-- <p class="muted mb-0">Director, Head — Department of Climate Change</p> -->
+          </div>
+        </a>
+        <nav class="main-nav ms-auto">
+          <a class="btn btn-link" href="index.html">Biography</a>
+          <a class="btn btn-link" href="publications.html">Publications</a>
+          <a class="btn btn-link" href="photos.html">Photos</a>
+          <a class="btn btn-link" href="speeches.html">Speeches</a>
+          <!-- <a class="btn btn-link" href="#social">Social</a> -->
+        </nav>
+      </div>
+    </header>
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #11ac1b 0%, #79a24b 100%);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 20px;
-        }
+    <main class="container mt-4">
+      <section id="bio" class="section bg-white p-4 rounded shadow-sm">
+        <h2>Biography</h2>
+        <div class="row g-3">
+          <div class="col-md-3 text-center">
+            <img src="director-abiola-awe.webp" alt="Dr. Iniobong Abiola-Awe" class="img-fluid rounded mb-2">
+          </div>
+          <div class="col-md-9">
+            <article id="bio_earlylife" class="mb-3">
+              <h3>Early Life</h3>
+              <p>
+                Dr. Iniobong Abiola-Awe was born and raised in Nigeria. From an early age she showed interest in environmental science and community development, which later shaped her academic and professional journey.
+              </p>
+            </article>
 
-        .business-card {
-            width: 100%;
-            max-width: 900px;
-            height: 450px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            display: flex;
-            overflow: hidden;
-        }
+            <article id="bio_school" class="mb-3">
+              <h3>Education</h3>
+              <p>
+                Dr. Abiola-Awe completed her undergraduate studies in Environmental Science, followed by postgraduate degrees focusing on climate policy and sustainable development. Her academic work includes research on adaptation strategies and resilience planning.
+              </p>
+            </article>
 
-        .card-left {
-            flex: 0 0 40%;
-            background: linear-gradient(135deg, #66ea8e 0%, #58a24b 100%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 40px 30px;
-            text-align: center;
-        }
+            <article id="bio_career" class="mb-3">
+              <h3>Career</h3>
+              <p>
+                Over the years, she has worked across government and international agencies to design and implement climate-related programs. She currently serves as the Director and Head of the Department of Climate Change at the Federal Ministry of Environment.
+              </p>
+            </article>
 
-        .card-left img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid white;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            margin-bottom: 20px;
-        }
+            <article id="bio_research" class="mb-3">
+              <h3>Research & Interests</h3>
+              <p>
+                Her primary research interests include climate adaptation, community resilience, and mainstreaming climate action into sector policy. She has authored several policy briefs and papers used by practitioners and policymakers.
+              </p>
+            </article>
 
-        .card-left-info h3 {
-            font-size: 18px;
-            color: white;
-            font-weight: 700;
-            margin-bottom: 6px;
-        }
+            <section id="social" class="mt-3">
+              <h4>Social</h4>
+              <p>
+                <a href="https://twitter.com/iniabiolawe" target="_blank" class="me-2" aria-label="Twitter"><i class="bi bi-twitter" style="font-size:1.25rem;color:#1DA1F2"></i></a>
+                <a href="https://linkedin.com/in/iniabiolawe" target="_blank" class="me-2" aria-label="LinkedIn"><i class="bi bi-linkedin" style="font-size:1.25rem;color:#0A66C2"></i></a>
+                <a href="mailto:Iniobongabiola.awe@environment.gov.ng" aria-label="Email"><i class="bi bi-envelope-fill" style="font-size:1.1rem;color:#D44638"></i></a>
+              </p>
+              <div class="twitter-embed">
+                <a class="twitter-timeline" data-height="400" href="https://twitter.com/iniabiolawe"></a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        .card-left-info p {
-            font-size: 13px;
-            color: rgba(255, 255, 255, 0.95);
-            font-weight: 500;
-            margin: 0;
-            line-height: 1.4;
-        }
+    <footer class="site-footer mt-4">
+      <div class="container text-center">
+        <small>&copy; 2026 Dr. Iniobong Abiola-Awe</small>
+      </div>
+    </footer>
 
-        .card-right {
-            flex: 0 0 60%;
-            padding: 50px 45px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background: #f8f9fa;
-        }
-
-        .card-right h1 {
-            font-size: 38px;
-            color: #1a1a1a;
-            font-weight: 700;
-            margin-bottom: 8px;
-            letter-spacing: -0.5px;
-        }
-
-        .card-right .title {
-            font-size: 16px;
-            color: #000000;
-            font-weight: 600;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .card-right .divider {
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, #15b794 0%, #70a32c 100%);
-            margin-bottom: 25px;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            font-size: 14px;
-            color: #333;
-        }
-
-        .contact-item .label {
-            font-weight: 600;
-            color: #ea6666;
-            min-width: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-        }
-
-        .contact-item .value {
-            color: #555;
-        }
-
-        .contact-item a {
-            color: #000000;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .contact-item a:hover {
-            color: #764ba2;
-            text-decoration: underline;
-        }
-        .fellow, .fellow1 {
-            background: #ea666600;
-            color: white;
-            font-size: 10px;
-            padding: 2px 6px;
-            border-radius: 4px;
-            margin-left: 8px;
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        /* accessibility helper for screen-reader-only text */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-
-        /* Brand / real colors for contact icons */
-        .icon-linkedin { color: #0077B5; }
-        .icon-email    { color: #D44638; }
-        .icon-phone    { color: #28A745; }
-        .icon-address  { color: #E76F51; }
-        .icon-website  { color: #0D6EFD; }
-
-        /* Slight hover effect for icons */
-        .contact-item .label i:hover {
-            opacity: 0.85;
-            transform: translateY(-1px);
-        }
-
-
-        /* Print styles */
-        @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
-
-            .business-card {
-                box-shadow: none;
-                max-width: 100%;
-                height: auto;
-            }
-        }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .business-card {
-                flex-direction: column;
-                height: auto;
-                max-width: 100%;
-            }
-
-            .card-left {
-                flex: 0 0 auto;
-                padding: 30px;
-                min-height: 300px;
-            }
-
-            .card-left img {
-                width: 200px;
-                height: 200px;
-            }
-
-            .card-right {
-                flex: 0 0 auto;
-                padding: 30px;
-            }
-
-            .card-right h1 {
-                font-size: 28px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Install button (will be shown on supporting browsers) -->
+    <!-- Install button for PWA -->
     <button id="installBtn" class="install-btn" hidden aria-hidden="true">Install app</button>
-    <div class="business-card">
-        <!-- Left side with image -->
-        <div class="card-left">
-            <!-- <img src="director.jpg" alt="Profile Photo"> -->
-            <div class="card-left-info">
-                <h3>Dr. Iniobong Abiola-Awe  </h3>
-                <p>Director,<br> Head, Department of Climate Change</p>
-                <h3>Federal Ministry of Environment</h3>
-            </div>
-        </div>
 
-        <!-- Right side with information -->
-        <div class="card-right">
-            <!-- <h2>Dr. Iniobong Abiola-Awe</h2>
-            <p class="title">Director of Climate Change</p> -->
-            <!-- <div class="divider"></div> -->
-
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span class="label" aria-hidden="true"><i class="bi bi-linkedin icon-linkedin"></i></span>
-                    <span class="sr-only">LinkedIn</span>
-                    <span class="value"><a href="https://linkedin.com/in/iniabiolawe" target="_blank">linkedin.com/in/iniabiolawe</a></span>
-                </div>
-
-                <div class="contact-item">
-                    <span class="label" aria-hidden="true"><i class="bi bi-envelope icon-email"></i></span>
-                    <span class="sr-only">Email</span>
-                    <span class="value"><a href="mailto:iniabiolawe@yahoo.co.uk">iniabiolawe@yahoo.co.uk</a><br><a href="mailto:Iniobongabiola.awe@environment.gov.ng">Iniobongabiola.awe@environment.gov.ng</a></span>
-                </div>
-
-                <div class="contact-item">
-                    <span class="label" aria-hidden="true"><i class="bi bi-telephone icon-phone"></i></span>
-                    <span class="sr-only">Phone</span>
-                    <span class="value"><a href="tel:+2348034452959">+234 803 445 2959</a></span>
-                </div>
-
-                <div class="contact-item">
-                    <span class="label" aria-hidden="true"><i class="bi bi-geo-alt icon-address"></i></span>
-                    <span class="sr-only">Address</span>
-                    <span class="value">Plot 444, Aguyi Ironsi Street, Green Building, Maitama, Abuja.</span>
-                </div>
-
-                <div class="contact-item">
-                    <span class="label" aria-hidden="true"><i class="bi bi-globe2 icon-website"></i></span>
-                    <span class="sr-only">Website</span>
-                    <span class="value"><a href="https://climatechange.environment.gov.ng/" target="_blank">climatechange.environment.gov.ng</a></span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Service Worker registration
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('sw.js').then(function(reg) {
-                    console.log('Service worker registered.', reg);
-                }).catch(function(err) {
-                    console.warn('Service worker registration failed:', err);
-                });
-            });
-        }
-
-        // Handle beforeinstallprompt to show custom install UI
-        let deferredPrompt;
-        const installBtn = document.getElementById('installBtn');
-
-        window.addEventListener('beforeinstallprompt', (e) => {
-            // Prevent the mini-infobar from appearing on mobile
-            e.preventDefault();
-            deferredPrompt = e;
-            // Show the install button
-            installBtn.hidden = false;
-            installBtn.setAttribute('aria-hidden', 'false');
-        });
-
-        installBtn.addEventListener('click', async () => {
-            installBtn.hidden = true;
-            if (!deferredPrompt) return;
-            deferredPrompt.prompt();
-            const { outcome } = await deferredPrompt.userChoice;
-            console.log('User response to the install prompt:', outcome);
-            deferredPrompt = null;
-        });
-
-        // Optional: listen for appinstalled
-        window.addEventListener('appinstalled', (evt) => {
-            console.log('PWA was installed', evt);
-        });
-    </script>
-
-    <style>
-        /* Install button styling */
-        .install-btn {
-            position: fixed;
-            right: 18px;
-            bottom: 18px;
-            z-index: 9999;
-            background: #11ac1b;
-            color: #fff;
-            border: none;
-            padding: 12px 16px;
-            border-radius: 10px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-            font-weight: 700;
-            cursor: pointer;
-            display: inline-flex;
-            gap: 8px;
-            align-items: center;
-        }
-
-        .install-btn:active { transform: translateY(1px); }
-    </style>
-</body>
+  <script src="https://platform.twitter.com/widgets.js" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
