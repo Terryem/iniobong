@@ -80,7 +80,7 @@
       background-position: center 30%; /* Starting position */
     }
     50% {
-      background-position: center 31%; /* Floats down slightly, then returns */
+      background-position: center 33%; /* Floats down slightly, then returns */
     }
 }
   .hero .wrap{ text-align:center; width:100%; }
