@@ -1,0 +1,107 @@
+
+  /* Base styles for desktop/larger screens */
+  #mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #111;
+    color: white;
+    position: relative;
+  }
+
+  #nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Hide hamburger button on large screens */
+  #menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 6px;
+    padding: 5px;
+  }
+
+  #menu-toggle span {
+    width: 28px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  /* Small screen / Mobile responsiveness */
+  @media (max-width: 768px) {
+    /* Show hamburger only on small screens */
+    #menu-toggle {
+      display: flex;
+    }
+
+    /* Hide horizontal links by default on small screens */
+    #nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #111;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      z-index: 1000;
+      gap: 15px;
+    }
+
+    /* Class toggled via JS to display menu when clicked */
+    #nav-links.active {
+      display: flex;
+    }
+  }
+
+
+ 
+  /* Hide hamburger button by default on larger screens */
+  #menu-toggle {
+    display: none;
+  }
+
+  /* Mobile screen styles */
+  @media (max-width: 768px) {
+    #menu-toggle {
+      display: flex; /* Show hamburger on mobile */
+    }
+
+    #nav-links {
+      display: none; /* Hidden by default on mobile */
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #111;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    /* Class added via JavaScript to open the menu */
+    #nav-links.active {
+      display: flex;
+    }
+  }
