@@ -61,18 +61,33 @@
   @media (max-width:720px){ nav ul{display:none;} }
 
   /* ===== HERO ===== */
-  .hero{
-    min-height:100vh;
-    display:flex; align-items:center;
+.hero {
+    /* min-height:100vh; */
+    height: 400px;
+    display: flex; 
+    align-items: center;
     background:
-      linear-gradient(180deg, rgba(10,10,12,0.35) 0%, rgba(10,10,12,0.55) 55%, black 100%),
-     url('images/background.png')center 30% / cover no-repeat;
-    padding-top:120px;
-  }
+      linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 100%),
+      url('images/Director.PNG') center 30% / cover no-repeat;
+    padding-top: 120px;
+    
+    /* Apply the floating animation */
+    animation: floatingBackground 4s ease-in-out infinite;
+}
+
+@keyframes floatingBackground {
+    0%, 100% {
+      background-position: center 30%; /* Starting position */
+    }
+    50% {
+      background-position: center 31%; /* Floats down slightly, then returns */
+    }
+}
   .hero .wrap{ text-align:center; width:100%; }
   .hero .eyebrow{
-    font-size:13px; letter-spacing:0.22em; text-transform:uppercase; color:var(--amber);
+    font-size:30px; letter-spacing:0.22em; text-transform:uppercase; color: white;
     margin-bottom:18px; opacity:0; animation:rise .8s ease forwards; animation-delay:.1s;
+    text-shadow: #000000 0 2px 4px;
   }
   .hero h1{
     font-size:clamp(72px,16vw,168px);

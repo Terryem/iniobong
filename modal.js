@@ -15,3 +15,29 @@ function openModal(imgSrc, title, description) {
       closeModal();
     }
   }
+
+
+
+  const modal = document.getElementById("aboutModal");
+const btn = document.getElementById("openModalBtn");
+const closeBtn = document.getElementsByClassName("close-btn")[0];
+
+// Open modal when button is clicked
+btn.addEventListener("click", function() {
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden"; // Prevents background scrolling while modal is open
+});
+
+// Close modal when 'X' is clicked
+closeBtn.addEventListener("click", function() {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto"; // Restores background scrolling
+});
+
+// Close modal if user clicks outside the modal box
+window.addEventListener("click", function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+});
