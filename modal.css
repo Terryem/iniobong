@@ -102,11 +102,24 @@
     margin-bottom: 20px;
     font-size: 24px;
 }
+.about-copy{
+  /* margin-top: 10px; */
+    /* margin-bottom: 5px; */
+    /* font-size: 18px; */
+    text-align: justify;
+    /* text-align-last:center; */
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 .modal-body-copy h3 {
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 18px;
+    text-align: justify;
+    text-align-last:center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Close 'X' Button */

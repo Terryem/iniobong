@@ -62,14 +62,17 @@
 
   /* ===== HERO ===== */
 .hero {
-    /* min-height:100vh; */
-    height: 400px;
+    /* Use relative height or responsive units instead of a fixed 400px */
+    width: 100%;
+    min-height: 50vh;
+    height: auto;
     display: flex; 
     align-items: center;
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 100%),
-      url('images/Director.PNG') center 30% / cover no-repeat;
+      url('images/HOS.png') center center / 100% auto no-repeat;
     padding-top: 120px;
+    padding-bottom: 60px;
     
     /* Apply the floating animation */
     animation: floatingBackground 4s ease-in-out infinite;
@@ -80,7 +83,7 @@
       background-position: center 30%; /* Starting position */
     }
     50% {
-      background-position: center 33%; /* Floats down slightly, then returns */
+      background-position: center 31%; /* Floats down slightly, then returns */
     }
 }
   .hero .wrap{ text-align:center; width:100%; }
